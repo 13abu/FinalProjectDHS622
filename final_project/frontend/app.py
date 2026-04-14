@@ -1,6 +1,8 @@
 import dash
 from dash import dcc, html, Input, Output
 from flask import session
+from final_project.frontend.pages import welcome, analyze, login
+from final_project.utilities.security_logic import parse_token_from_flask, verify_token
 
 server_secret = "replace_this_with_a_long_random_string_123456"
 
@@ -23,9 +25,6 @@ app.layout = html.Div([
     Input("url", "pathname"),
 )
 def display_page(pathname):
-    from final_project.utilities.security_logic import parse_token_from_flask, verify_token
-    from final_project.frontend.pages import welcome, analyze, login
-
     token = parse_token_from_flask()
     is_authenticated = False
     if token:

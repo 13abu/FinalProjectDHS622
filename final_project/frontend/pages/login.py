@@ -75,7 +75,7 @@ layout = html.Div(
 @dash.callback(
     Output("login-button", "n_clicks"),
     Output("login-message", "children"),
-    Output("url", "pathname"),
+    Output("url", "href"),
     Input("login-button", "n_clicks"),
     State("login-email", "value"),
     State("login-password", "value"),
