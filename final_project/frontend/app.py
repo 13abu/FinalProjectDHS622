@@ -15,7 +15,7 @@ app.server.secret_key = server_secret
 server = app.server
 
 app.layout = html.Div([
-    dcc.Location(id="url", refresh=False),
+    dcc.Location(id="url", refresh=True),
     html.Div(id="page-content"),
 ])
 
