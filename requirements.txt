@@ -7,3 +7,13 @@ tqdm
 pika
 dash
 black
+fastapi
+uvicorn
+python-jose
+flask
+python-multipart
+dash-cytoscape
+networkx
+python-louvain
+beautifulsoup4
+python-dotenv
