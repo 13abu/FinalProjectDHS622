@@ -6,11 +6,10 @@ server_secret = "replace_this_with_a_long_random_string_123456"
 
 app = dash.Dash(
     __name__,
-    use_pages=False,
     suppress_callback_exceptions=True,
-    server_kwargs={"secret_key": server_secret},
 )
 
+app.server.secret_key = server_secret
 server = app.server
 
 app.layout = html.Div([
