@@ -6,7 +6,7 @@ from fastapi import HTTPException
 from starlette.requests import Request
 from flask import session
 
-SECRET_KEY = secrets.token_hex(20)
+SECRET_KEY = "signalwatch_secret_key_dhs622_final_project_2026"
 ALGORITHM = "HS256"
 TOKEN_LIFETIME_MINUTES = 60 * 24 * 7  # 1 week
 

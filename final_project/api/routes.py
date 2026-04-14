@@ -109,3 +109,46 @@ async def repost_network(
             "num_edges": len(G.edges()),
         }
     }
+
+@router.post("/topic_model")
+async def topic_model(
+    request: Request,
+    seed_list: str = Body(embed=True),
+    start_date: str = Body(embed=True),
+    end_date: str = Body(embed=True),
+    n_topics: int = Body(embed=True, default=6),
+):
+    verify_token(parse_token_from_starlette(request))
+    from ..utilities.logic import get_topic_model, get_topic_model_by_camp
+    topics = get_topic_model(seed_list, start_date, end_date, n_topics)
+    by_camp = get_topic_model_by_camp(seed_list, start_date, end_date)
+    return {"data": {"overall": topics, "by_camp": by_camp}}
+
+
+@router.post("/keyword_timeline")
+async def keyword_timeline(
+    request: Request,
+    seed_list: str = Body(embed=True),
+    start_date: str = Body(embed=True),
+    end_date: str = Body(embed=True),
+):
+    verify_token(parse_token_from_starlette(request))
+    from ..utilities.logic import get_keyword_timeline
+    return {"data": get_keyword_timeline(seed_list, start_date, end_date)}
+
+
+@router.post("/sentiment")
+async def sentiment(
+    request: Request,
+    seed_list: str = Body(embed=True),
+    start_date: str = Body(embed=True),
+    end_date: str = Body(embed=True),
+):
+    verify_token(parse_token_from_starlette(request))
+    from ..utilities.logic import get_sentiment_by_camp, get_sentiment_timeline
+    return {
+        "data": {
+            "by_camp": get_sentiment_by_camp(seed_list, start_date, end_date),
+            "timeline": get_sentiment_timeline(seed_list, start_date, end_date),
+        }
+    }

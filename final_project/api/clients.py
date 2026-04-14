@@ -98,3 +98,39 @@ def post_repost_network(
     )
     resp.raise_for_status()
     return resp.json()["data"]
+
+def post_topic_model(
+    token: str, seed_list: str, start_date: str, end_date: str, n_topics: int = 6
+) -> dict:
+    resp = requests.post(
+        urljoin(api_base, "topic_model"),
+        json={"seed_list": seed_list, "start_date": start_date,
+              "end_date": end_date, "n_topics": n_topics},
+        headers=_auth_headers(token),
+    )
+    resp.raise_for_status()
+    return resp.json()["data"]
+
+
+def post_keyword_timeline(
+    token: str, seed_list: str, start_date: str, end_date: str
+) -> list[dict]:
+    resp = requests.post(
+        urljoin(api_base, "keyword_timeline"),
+        json={"seed_list": seed_list, "start_date": start_date, "end_date": end_date},
+        headers=_auth_headers(token),
+    )
+    resp.raise_for_status()
+    return resp.json()["data"]
+
+
+def post_sentiment(
+    token: str, seed_list: str, start_date: str, end_date: str
+) -> dict:
+    resp = requests.post(
+        urljoin(api_base, "sentiment"),
+        json={"seed_list": seed_list, "start_date": start_date, "end_date": end_date},
+        headers=_auth_headers(token),
+    )
+    resp.raise_for_status()
+    return resp.json()["data"]
