@@ -4,12 +4,11 @@ psycopg2-binary
 sqlalchemy
 seaborn
 tqdm
-pika
 dash
 black
 fastapi
 uvicorn
-python-jose
+python-jose[cryptography]
 flask
 python-multipart
 dash-cytoscape
@@ -17,3 +16,8 @@ networkx
 python-louvain
 beautifulsoup4
 python-dotenv
+scikit-learn
+textblob
+nltk
+plotly
+requests
