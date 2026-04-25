@@ -65,6 +65,7 @@ layout = html.Div(
         html.Div(id="keyword-timeline-container"),
         html.Div(id="sentiment-container"),
         html.Div(id="engagement-container"),
+        html.Div(id="aipac-container"),
         html.Div(id="volume-by-camp-container"),
         html.Div(id="repost-network-container"),
         html.Div(id="topic-model-container"),
@@ -470,13 +471,18 @@ def render_volume_by_camp(n_clicks, start_date, end_date):
 
 # in imports
 from ...api.clients import (
-    ...
+    get_seed_list_names,
+    post_seed_preview,
+    post_top_statuses,
+    post_time_series,
+    post_repost_network,
+    post_topic_model,
+    post_keyword_timeline,
+    post_sentiment,
+    post_engagement_by_camp,
+    post_volume_by_camp,
     post_aipac,
 )
-
-# in layout, add after engagement-container:
-html.Div(id="aipac-container"),
-
 # new callback
 @dash.callback(
     Output("aipac-container", "children"),
