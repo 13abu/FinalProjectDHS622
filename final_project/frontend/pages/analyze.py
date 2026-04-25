@@ -15,6 +15,8 @@ from ...api.clients import (
     post_topic_model,
     post_keyword_timeline,
     post_sentiment,
+    post_engagement_by_camp,
+    post_volume_by_camp,
 )
 from ...utilities.logic import make_cytoscape_stylesheet
 
@@ -62,6 +64,8 @@ layout = html.Div(
         html.Div(id="time-series-container"),
         html.Div(id="keyword-timeline-container"),
         html.Div(id="sentiment-container"),
+        html.Div(id="engagement-container"),
+        html.Div(id="volume-by-camp-container"),
         html.Div(id="repost-network-container"),
         html.Div(id="topic-model-container"),
         html.Div(id="top-posts-container"),
@@ -406,3 +410,60 @@ def show_node_info(node_data):
             ]),
         ],
     )
+@dash.callback(
+    Output("engagement-container", "children"),
+    Input("analyze-btn", "n_clicks"),
+    State("start-date", "value"),
+    State("end-date", "value"),
+    prevent_initial_call=True,
+)
+def render_engagement(n_clicks, start_date, end_date):
+    token = get_token()
+    records = post_engagement_by_camp(token, SEED_LIST, start_date, end_date)
+    if not records:
+        return html.P("No engagement data.", style={"color": "#5F5E5A"})
+
+    df = pd.DataFrame(records)
+    fig = go.Figure()
+    for metric, label in [("reblogs", "Avg reblogs"), ("likes", "Avg likes")]:
+        fig.add_trace(go.Bar(
+            name=label,
+            x=df["camp"],
+            y=df[metric],
+            marker_color={"reblogs": "#1D9E75", "likes": "#457b9d"}[metric],
+        ))
+    fig.update_layout(
+        barmode="group",
+        title="Average engagement by camp",
+        template="plotly_dark",
+        paper_bgcolor="#0d0f0e",
+        plot_bgcolor="#111",
+        xaxis_title="Camp",
+        yaxis_title="Average per post",
+    )
+    return html.Div([section_header("Engagement by camp"), dcc.Graph(figure=fig)])
+
+
+@dash.callback(
+    Output("volume-by-camp-container", "children"),
+    Input("analyze-btn", "n_clicks"),
+    State("start-date", "value"),
+    State("end-date", "value"),
+    prevent_initial_call=True,
+)
+def render_volume_by_camp(n_clicks, start_date, end_date):
+    token = get_token()
+    records = post_volume_by_camp(token, SEED_LIST, start_date, end_date)
+    if not records:
+        return html.P("No volume data.", style={"color": "#5F5E5A"})
+
+    df = pd.DataFrame(records)
+    fig = px.line(
+        df, x="date", y="count", color="camp",
+        title="Posting volume by camp over time",
+        template="plotly_dark",
+        color_discrete_map=CAMP_COLORS,
+        labels={"date": "Date", "count": "Posts", "camp": "Camp"},
+    )
+    fig.update_layout(paper_bgcolor="#0d0f0e", plot_bgcolor="#111")
+    return html.Div([section_header("Posting volume by camp"), dcc.Graph(figure=fig)])

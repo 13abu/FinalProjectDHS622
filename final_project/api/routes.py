@@ -152,3 +152,26 @@ async def sentiment(
             "timeline": get_sentiment_timeline(seed_list, start_date, end_date),
         }
     }
+
+@router.post("/engagement_by_camp")
+async def engagement_by_camp(
+    request: Request,
+    seed_list: str = Body(embed=True),
+    start_date: str = Body(embed=True),
+    end_date: str = Body(embed=True),
+):
+    verify_token(parse_token_from_starlette(request))
+    from ..utilities.logic import get_engagement_by_camp
+    return {"data": get_engagement_by_camp(seed_list, start_date, end_date)}
+
+
+@router.post("/volume_by_camp")
+async def volume_by_camp(
+    request: Request,
+    seed_list: str = Body(embed=True),
+    start_date: str = Body(embed=True),
+    end_date: str = Body(embed=True),
+):
+    verify_token(parse_token_from_starlette(request))
+    from ..utilities.logic import get_volume_by_camp_over_time
+    return {"data": get_volume_by_camp_over_time(seed_list, start_date, end_date)}

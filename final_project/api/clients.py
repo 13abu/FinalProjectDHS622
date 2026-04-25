@@ -134,3 +134,26 @@ def post_sentiment(
     )
     resp.raise_for_status()
     return resp.json()["data"]
+
+def post_engagement_by_camp(
+    token: str, seed_list: str, start_date: str, end_date: str
+) -> list[dict]:
+    resp = requests.post(
+        urljoin(api_base, "engagement_by_camp"),
+        json={"seed_list": seed_list, "start_date": start_date, "end_date": end_date},
+        headers=_auth_headers(token),
+    )
+    resp.raise_for_status()
+    return resp.json()["data"]
+
+
+def post_volume_by_camp(
+    token: str, seed_list: str, start_date: str, end_date: str
+) -> list[dict]:
+    resp = requests.post(
+        urljoin(api_base, "volume_by_camp"),
+        json={"seed_list": seed_list, "start_date": start_date, "end_date": end_date},
+        headers=_auth_headers(token),
+    )
+    resp.raise_for_status()
+    return resp.json()["data"]
