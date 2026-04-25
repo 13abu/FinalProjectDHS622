@@ -157,3 +157,12 @@ def post_volume_by_camp(
     )
     resp.raise_for_status()
     return resp.json()["data"]
+
+def post_aipac(token: str, seed_list: str) -> list[dict]:
+    resp = requests.post(
+        urljoin(api_base, "aipac"),
+        json={"seed_list": seed_list},
+        headers=_auth_headers(token),
+    )
+    resp.raise_for_status()
+    return resp.json()["data"]

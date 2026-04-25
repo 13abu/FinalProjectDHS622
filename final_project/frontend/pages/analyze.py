@@ -467,3 +467,59 @@ def render_volume_by_camp(n_clicks, start_date, end_date):
     )
     fig.update_layout(paper_bgcolor="#0d0f0e", plot_bgcolor="#111")
     return html.Div([section_header("Posting volume by camp"), dcc.Graph(figure=fig)])
+
+# in imports
+from ...api.clients import (
+    ...
+    post_aipac,
+)
+
+# in layout, add after engagement-container:
+html.Div(id="aipac-container"),
+
+# new callback
+@dash.callback(
+    Output("aipac-container", "children"),
+    Input("analyze-btn", "n_clicks"),
+    State("start-date", "value"),
+    State("end-date", "value"),
+    prevent_initial_call=True,
+)
+def render_aipac(n_clicks, start_date, end_date):
+    token = get_token()
+    records = post_aipac(token, SEED_LIST)
+    if not records:
+        return html.P("No AIPAC data.", style={"color": "#5F5E5A"})
+
+    df = pd.DataFrame(records)
+    df["color"] = df["camp"].map(CAMP_COLORS).fillna("#888")
+    df["label"] = "@" + df["handle"]
+
+    fig = go.Figure(go.Bar(
+        x=df["label"],
+        y=df["aipac_total"],
+        marker_color=df["color"].tolist(),
+        text=[f"${v:,.0f}" for v in df["aipac_total"]],
+        textposition="outside",
+    ))
+    fig.update_layout(
+        title="AIPAC contributions to politicians in dataset (2024 cycle)",
+        template="plotly_dark",
+        paper_bgcolor="#0d0f0e",
+        plot_bgcolor="#111",
+        xaxis_title="Account",
+        yaxis_title="Total AIPAC funding ($)",
+        yaxis_tickformat="$,.0f",
+        showlegend=False,
+        margin={"t": 60, "b": 120},
+    )
+
+    return html.Div([
+        section_header("AIPAC funding vs. camp alignment"),
+        html.P(
+            "Bar color = camp label (red = pro_war, blue = anti_war). "
+            "Note: only politicians appear here — media accounts excluded.",
+            style={"color": "#5F5E5A", "fontSize": "12px", "marginBottom": "8px"}
+        ),
+        dcc.Graph(figure=fig),
+    ])

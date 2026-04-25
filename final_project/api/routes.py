@@ -175,3 +175,12 @@ async def volume_by_camp(
     verify_token(parse_token_from_starlette(request))
     from ..utilities.logic import get_volume_by_camp_over_time
     return {"data": get_volume_by_camp_over_time(seed_list, start_date, end_date)}
+
+@router.post("/aipac")
+async def aipac(
+    request: Request,
+    seed_list: str = Body(embed=True),
+):
+    verify_token(parse_token_from_starlette(request))
+    from ..utilities.logic import get_aipac_comparison
+    return {"data": get_aipac_comparison(seed_list)}

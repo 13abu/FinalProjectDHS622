@@ -599,3 +599,61 @@ def get_volume_by_camp_over_time(
     )
     result["date"] = result["date"].astype(str)
     return result.to_dict("records")
+
+def export_network_to_gexf(
+    seed_list: str,
+    start_date: str,
+    end_date: str,
+    output_path: str = "network.gexf",
+) -> str:
+    G = make_repost_network(seed_list, start_date, end_date)
+    nx.write_gexf(G, output_path)
+    print(f"Network exported to {output_path}")
+    return output_path
+
+def get_aipac_comparison(seed_list: str) -> list[dict]:
+    import os
+    import csv
+
+    # Manual mapping of Truth Social handles to AIPAC recipient names
+    handle_to_aipac_name = {
+        "SpeakerJohnson": "Johnson, Mike",
+        "SteveScalise": "Scalise, Steve",
+        "tomemmer": "Emmer, Tom",
+        "MikeGarcia": "Garcia, Mike",
+        "BurgessOwens": "Owens, Burgess",
+        "repgregsteube": "Steube, Greg",
+        "replisamcclain": "McClain, Lisa",
+        "repandybiggsaz": "Biggs, Andy",
+        "RepBrianJack": "Jack, Brian",
+        "repjasonsmith": "Smith, Jason",
+        "RepMikeCollins": "Collins, Mike",
+        "DevinNunes": "Nunes, Devin",
+        "JohnRatcliffe": "Ratcliffe, John",
+    }
+
+    # Load AIPAC CSV
+    csv_path = os.path.join(
+        os.path.dirname(__file__), "..", "data", "aipac.csv"
+    )
+    aipac_lookup = {}
+    with open(csv_path, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            aipac_lookup[row["Recipient"].strip()] = int(float(row["Total"]))
+
+    seeds = fetch_seeds(seed_list)
+    handle_to_camp = {s["handle"]: s.get("camp", "unknown") for s in seeds}
+
+    results = []
+    for handle, aipac_name in handle_to_aipac_name.items():
+        total = aipac_lookup.get(aipac_name, 0)
+        results.append({
+            "handle": handle,
+            "aipac_name": aipac_name,
+            "aipac_total": total,
+            "camp": handle_to_camp.get(handle, "unknown"),
+        })
+
+    results.sort(key=lambda x: x["aipac_total"], reverse=True)
+    return results
