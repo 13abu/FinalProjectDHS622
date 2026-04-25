@@ -523,3 +523,79 @@ def get_sentiment_timeline(
         .sort_values("date")
     )
     return timeline.to_dict("records")
+
+def get_engagement_by_camp(
+    seed_list: str,
+    start_date: str,
+    end_date: str,
+) -> list[dict]:
+    seeds = fetch_seeds(seed_list)
+    handle_to_camp = {s["handle"]: s.get("camp", "unknown") for s in seeds}
+    handles = list(handle_to_camp.keys())
+
+    records = fetch_statuses_for_handles(handles, start_date, end_date)
+
+    rows = []
+    for r in records:
+        rows.append({
+            "camp": handle_to_camp.get(r["account_handle"], "unknown"),
+            "reblogs": r.get("reblogs_count") or 0,
+            "likes": r.get("favourites_count") or 0,
+            "engagement": (r.get("reblogs_count") or 0) + (r.get("favourites_count") or 0),
+        })
+
+    df = pd.DataFrame(rows)
+    if df.empty:
+        return []
+
+    summary = (
+        df.groupby("camp")[["reblogs", "likes", "engagement"]]
+        .mean()
+        .reset_index()
+        .round(2)
+    )
+    return summary.to_dict("records")
+
+
+def get_volume_by_camp_over_time(
+    seed_list: str,
+    start_date: str,
+    end_date: str,
+) -> list[dict]:
+    from .db import engine, statuses_table
+    import sqlalchemy as sa
+
+    seeds = fetch_seeds(seed_list)
+    handle_to_camp = {s["handle"]: s.get("camp", "unknown") for s in seeds}
+    handles = list(handle_to_camp.keys())
+
+    with engine.connect() as conn:
+        rp = conn.execute(
+            sa.select(
+                statuses_table.c.account_handle,
+                sa.func.date_trunc("day", statuses_table.c.created_at).label("date"),
+                sa.func.count().label("count"),
+            ).where(
+                statuses_table.c.account_handle.in_(handles),
+                statuses_table.c.created_at >= pd.Timestamp(start_date),
+                statuses_table.c.created_at <= pd.Timestamp(end_date),
+            ).group_by(
+                statuses_table.c.account_handle,
+                sa.func.date_trunc("day", statuses_table.c.created_at),
+            )
+        )
+    records = [dict(r._mapping) for r in rp.fetchall()]
+
+    df = pd.DataFrame(records)
+    if df.empty:
+        return []
+
+    df["camp"] = df["account_handle"].map(handle_to_camp).fillna("unknown")
+    result = (
+        df.groupby(["date", "camp"])["count"]
+        .sum()
+        .reset_index()
+        .sort_values("date")
+    )
+    result["date"] = result["date"].astype(str)
+    return result.to_dict("records")
