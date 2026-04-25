@@ -1,0 +1,1811 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-04-25">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="6" title="count" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="camp" type="string" />
+      <attribute id="1" title="in_degree" type="long" />
+      <attribute id="2" title="out_degree" type="long" />
+      <attribute id="3" title="in_strength" type="long" />
+      <attribute id="4" title="out_strength" type="long" />
+      <attribute id="5" title="cluster" type="long" />
+    </attributes>
+    <nodes>
+      <node id="CarlHigbie" label="CarlHigbie">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="GeorgeLayman" label="GeorgeLayman">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="NewsMax" label="NewsMax">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="50" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="ClaremontInstitute" label="ClaremontInstitute">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="2" />
+        </attvalues>
+      </node>
+      <node id="theammind" label="theammind">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="2" />
+        </attvalues>
+      </node>
+      <node id="DCEnquirer" label="DCEnquirer">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="5" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="DineshDSouza" label="DineshDSouza">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="brandongill" label="brandongill">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="danielledsouzagill" label="danielledsouzagill">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="realDonaldTrump" label="realDonaldTrump">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="33" />
+          <attvalue for="2" value="7" />
+          <attvalue for="3" value="154" />
+          <attvalue for="4" value="47" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="repbrandongill" label="repbrandongill">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="3" />
+        </attvalues>
+      </node>
+      <node id="DNITulsiGabbard" label="DNITulsiGabbard">
+        <attvalues>
+          <attvalue for="0" value="bridge" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="DevinNunes" label="DevinNunes">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="8" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="34" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="CitizenFreePress" label="CitizenFreePress">
+        <attvalues>
+          <attvalue for="0" value="anti_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="ThaddeusMcCotter" label="ThaddeusMcCotter">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="frmichaelsliney" label="frmichaelsliney">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="15" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="narendramodi" label="narendramodi">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="repgregsteube" label="repgregsteube">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="rogerkimball1" label="rogerkimball1">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="9" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="DonaldJTrumpJr" label="DonaldJTrumpJr">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="Nate_Morris" label="Nate_Morris">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="9" />
+        </attvalues>
+      </node>
+      <node id="EDSecMcMahon" label="EDSecMcMahon">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="rapidresponse47" label="rapidresponse47">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="7" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="7" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="HouseAdmin" label="HouseAdmin">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="HouseGOP" label="HouseGOP">
+        <attvalues>
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="NewtGingrich" label="NewtGingrich">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="SpeakerJohnson" label="SpeakerJohnson">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="jsolomonreports" label="jsolomonreports">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="ICEgov" label="ICEgov">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="PressSec" label="PressSec">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="JohnRatcliffe" label="JohnRatcliffe">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="WhiteHouse" label="WhiteHouse">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="16" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="JordanSchachtel" label="JordanSchachtel">
+        <attvalues>
+          <attvalue for="0" value="anti_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="17" />
+        </attvalues>
+      </node>
+      <node id="JudicialWatch" label="JudicialWatch">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="6" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="18" />
+        </attvalues>
+      </node>
+      <node id="KariLake" label="KariLake">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="5" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="KristiNoem" label="KristiNoem">
+        <attvalues>
+          <attvalue for="0" value="anti_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="19" />
+        </attvalues>
+      </node>
+      <node id="SecNoem" label="SecNoem">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="19" />
+        </attvalues>
+      </node>
+      <node id="OfficialBillOReilly" label="OfficialBillOReilly">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="5" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="20" />
+        </attvalues>
+      </node>
+      <node id="MichaelOsman" label="MichaelOsman">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="20" />
+        </attvalues>
+      </node>
+      <node id="RealSKeshel" label="RealSKeshel">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="21" />
+        </attvalues>
+      </node>
+      <node id="DJT4POTUS" label="DJT4POTUS">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="21" />
+        </attvalues>
+      </node>
+      <node id="markkhalil" label="markkhalil">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="21" />
+        </attvalues>
+      </node>
+      <node id="timacfarlane" label="timacfarlane">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="21" />
+        </attvalues>
+      </node>
+      <node id="Realmattboyle" label="Realmattboyle">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="USAmbassadorGR" label="USAmbassadorGR">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="RepBrianJack" label="RepBrianJack">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="RobFinnerty" label="RobFinnerty">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="8" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="SECPaulSAtkins" label="SECPaulSAtkins">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="10" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="23" />
+        </attvalues>
+      </node>
+      <node id="SECgov" label="SECgov">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="23" />
+        </attvalues>
+      </node>
+      <node id="SecRubio" label="SecRubio">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="SteakforBreakfast" label="SteakforBreakfast">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="SteveBannonsWarRoom" label="SteveBannonsWarRoom">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="TSAgov" label="TSAgov">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="JanJekielek" label="JanJekielek">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="TheLeeGreenwood" label="TheLeeGreenwood">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="13" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="24" />
+        </attvalues>
+      </node>
+      <node id="TheTravelersDust" label="TheTravelersDust">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="6" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="10" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="LarryL167" label="LarryL167">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="VirginiaPing45" label="VirginiaPing45">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="sandybruce" label="sandybruce">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="whistlingwhistler" label="whistlingwhistler">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="xenohart" label="xenohart">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="13" />
+        </attvalues>
+      </node>
+      <node id="TomFitton" label="TomFitton">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="14" />
+          <attvalue for="5" value="18" />
+        </attvalues>
+      </node>
+      <node id="Trafalgar_Group" label="Trafalgar_Group">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="14" />
+        </attvalues>
+      </node>
+      <node id="RobertCahaly" label="RobertCahaly">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="14" />
+        </attvalues>
+      </node>
+      <node id="TruthSocialFunds" label="TruthSocialFunds">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="4" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="15" />
+        </attvalues>
+      </node>
+      <node id="TulsiGabbard" label="TulsiGabbard">
+        <attvalues>
+          <attvalue for="0" value="bridge" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="USAmbJapan" label="USAmbJapan">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="13" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="DanScavino" label="DanScavino">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="USAmbUK" label="USAmbUK">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="WhatleyforNC" label="WhatleyforNC">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="5" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="ClayAndBuck" label="ClayAndBuck">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="Republicans" label="Republicans">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="afbranco" label="afbranco">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="16" />
+        </attvalues>
+      </node>
+      <node id="biancadelagarzaofficial" label="biancadelagarzaofficial">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="4" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="7" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="jmclghln" label="jmclghln">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="6" />
+          <attvalue for="3" value="3" />
+          <attvalue for="4" value="28" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="mikebr0371" label="mikebr0371">
+        <attvalues>
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="breitbartnews" label="breitbartnews">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="0" />
+        </attvalues>
+      </node>
+      <node id="JonKahnMusic" label="JonKahnMusic">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="0" />
+        </attvalues>
+      </node>
+      <node id="edhenry" label="edhenry">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="9" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="15" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="CSPsychOK" label="CSPsychOK">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="Franklin_Graham" label="Franklin_Graham">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="KarliBonne" label="KarliBonne">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="eric37j0ker" label="eric37j0ker">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="hayleycaronia" label="hayleycaronia">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="oneoldman48" label="oneoldman48">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="epaleezeldin" label="epaleezeldin">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="2" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="6" />
+          <attvalue for="5" value="11" />
+        </attvalues>
+      </node>
+      <node id="greggjarrett" label="greggjarrett">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="DanielCameronKY" label="DanielCameronKY">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="justthenews" label="justthenews">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="jordansekulow" label="jordansekulow">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="15" />
+          <attvalue for="5" value="1" />
+        </attvalues>
+      </node>
+      <node id="ACLJ" label="ACLJ">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="15" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="1" />
+        </attvalues>
+      </node>
+      <node id="karolineleavitt" label="karolineleavitt">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="lindamcmahon" label="lindamcmahon">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="marymargaretolohan" label="marymargaretolohan">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="mirandadevine" label="mirandadevine">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="mxmnews" label="mxmnews">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="mattsharpsteen" label="mattsharpsteen">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="4" />
+        </attvalues>
+      </node>
+      <node id="IStandWithTrump47" label="IStandWithTrump47">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="PeterNavarro" label="PeterNavarro">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="grenell" label="grenell">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="seanhannity" label="seanhannity">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="2" />
+          <attvalue for="5" value="5" />
+        </attvalues>
+      </node>
+      <node id="replisamcclain" label="replisamcclain">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="libsoftiktok" label="libsoftiktok">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="7" />
+        </attvalues>
+      </node>
+      <node id="rogerlsimon" label="rogerlsimon">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="2" />
+          <attvalue for="4" value="4" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="EdwardWillett" label="EdwardWillett">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="Granrene" label="Granrene">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="6" />
+        </attvalues>
+      </node>
+      <node id="seanspicer" label="seanspicer">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="11" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="RSBN" label="RSBN">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="12" />
+        </attvalues>
+      </node>
+      <node id="sharylattkisson" label="sharylattkisson">
+        <attvalues>
+          <attvalue for="0" value="anti_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="1" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="techwench" label="techwench">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="8" />
+        </attvalues>
+      </node>
+      <node id="shaunkraisman" label="shaunkraisman">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="1" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="34" />
+          <attvalue for="5" value="22" />
+        </attvalues>
+      </node>
+      <node id="stinchfield1776" label="stinchfield1776">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="0" />
+          <attvalue for="2" value="3" />
+          <attvalue for="3" value="0" />
+          <attvalue for="4" value="3" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="Realamericasmusic" label="Realamericasmusic">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="realamericasvoice" label="realamericasvoice">
+        <attvalues>
+          <attvalue for="0" value="pro_war" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+      <node id="wendyrogersaz" label="wendyrogersaz">
+        <attvalues>
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="0" />
+          <attvalue for="3" value="1" />
+          <attvalue for="4" value="0" />
+          <attvalue for="5" value="10" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="CarlHigbie" target="CarlHigbie" id="0">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="CarlHigbie" target="GeorgeLayman" id="1">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="CarlHigbie" target="NewsMax" id="2">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="ClaremontInstitute" target="theammind" id="3">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="DCEnquirer" target="DineshDSouza" id="4">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DCEnquirer" target="brandongill" id="5">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DCEnquirer" target="danielledsouzagill" id="6">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DCEnquirer" target="realDonaldTrump" id="7">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="DCEnquirer" target="repbrandongill" id="8">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="DanScavino" id="9">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="IStandWithTrump47" id="10">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="PeterNavarro" id="11">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="grenell" id="12">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="jmclghln" id="13">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="realDonaldTrump" id="14">
+        <attvalues>
+          <attvalue for="6" value="40" />
+        </attvalues>
+      </edge>
+      <edge source="realDonaldTrump" target="seanhannity" id="15">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DNITulsiGabbard" target="realDonaldTrump" id="16">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="CitizenFreePress" id="17">
+        <attvalues>
+          <attvalue for="6" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="DevinNunes" id="18">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="ThaddeusMcCotter" id="19">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="frmichaelsliney" id="20">
+        <attvalues>
+          <attvalue for="6" value="15" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="narendramodi" id="21">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="realDonaldTrump" id="22">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="repgregsteube" id="23">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DevinNunes" target="rogerkimball1" id="24">
+        <attvalues>
+          <attvalue for="6" value="9" />
+        </attvalues>
+      </edge>
+      <edge source="ThaddeusMcCotter" target="JanJekielek" id="25">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="rogerkimball1" target="libsoftiktok" id="26">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="rogerkimball1" target="realDonaldTrump" id="27">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="DonaldJTrumpJr" target="Nate_Morris" id="28">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="EDSecMcMahon" target="rapidresponse47" id="29">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="rapidresponse47" target="realDonaldTrump" id="30">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="HouseAdmin" target="HouseGOP" id="31">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="HouseAdmin" target="NewtGingrich" id="32">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="HouseAdmin" target="SpeakerJohnson" id="33">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="HouseAdmin" target="jsolomonreports" id="34">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="SpeakerJohnson" target="realDonaldTrump" id="35">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="ICEgov" target="PressSec" id="36">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="ICEgov" target="rapidresponse47" id="37">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="JohnRatcliffe" target="WhiteHouse" id="38">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="JohnRatcliffe" target="realDonaldTrump" id="39">
+        <attvalues>
+          <attvalue for="6" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="JordanSchachtel" target="JordanSchachtel" id="40">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="JudicialWatch" target="JudicialWatch" id="41">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="KariLake" target="realDonaldTrump" id="42">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="KristiNoem" target="SecNoem" id="43">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="OfficialBillOReilly" target="MichaelOsman" id="44">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="OfficialBillOReilly" target="OfficialBillOReilly" id="45">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="OfficialBillOReilly" target="realDonaldTrump" id="46">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="RealSKeshel" target="DJT4POTUS" id="47">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="RealSKeshel" target="markkhalil" id="48">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="RealSKeshel" target="realDonaldTrump" id="49">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="RealSKeshel" target="timacfarlane" id="50">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Realmattboyle" target="USAmbassadorGR" id="51">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Realmattboyle" target="realDonaldTrump" id="52">
+        <attvalues>
+          <attvalue for="6" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="RepBrianJack" target="WhiteHouse" id="53">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="RobFinnerty" target="NewsMax" id="54">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="RobFinnerty" target="realDonaldTrump" id="55">
+        <attvalues>
+          <attvalue for="6" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="SECPaulSAtkins" target="SECgov" id="56">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="SECgov" target="SECPaulSAtkins" id="57">
+        <attvalues>
+          <attvalue for="6" value="10" />
+        </attvalues>
+      </edge>
+      <edge source="SecRubio" target="WhiteHouse" id="58">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="SecRubio" target="realDonaldTrump" id="59">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="SteakforBreakfast" target="rapidresponse47" id="60">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="SteakforBreakfast" target="realDonaldTrump" id="61">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="SteveBannonsWarRoom" target="SteveBannonsWarRoom" id="62">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="SteveBannonsWarRoom" target="realDonaldTrump" id="63">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TSAgov" target="ICEgov" id="64">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TSAgov" target="PressSec" id="65">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TSAgov" target="rapidresponse47" id="66">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TSAgov" target="realDonaldTrump" id="67">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TheLeeGreenwood" target="TheLeeGreenwood" id="68">
+        <attvalues>
+          <attvalue for="6" value="13" />
+        </attvalues>
+      </edge>
+      <edge source="TheTravelersDust" target="LarryL167" id="69">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TheTravelersDust" target="TheTravelersDust" id="70">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="TheTravelersDust" target="VirginiaPing45" id="71">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="TheTravelersDust" target="sandybruce" id="72">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TheTravelersDust" target="whistlingwhistler" id="73">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TheTravelersDust" target="xenohart" id="74">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="TomFitton" target="JudicialWatch" id="75">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="TomFitton" target="TomFitton" id="76">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="TomFitton" target="realDonaldTrump" id="77">
+        <attvalues>
+          <attvalue for="6" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="Trafalgar_Group" target="RobertCahaly" id="78">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="TruthSocialFunds" target="TruthSocialFunds" id="79">
+        <attvalues>
+          <attvalue for="6" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="TulsiGabbard" target="DNITulsiGabbard" id="80">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="TulsiGabbard" target="realDonaldTrump" id="81">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="USAmbJapan" target="DanScavino" id="82">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="USAmbJapan" target="WhiteHouse" id="83">
+        <attvalues>
+          <attvalue for="6" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="USAmbJapan" target="rapidresponse47" id="84">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="USAmbJapan" target="realDonaldTrump" id="85">
+        <attvalues>
+          <attvalue for="6" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="USAmbUK" target="WhiteHouse" id="86">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="USAmbUK" target="realDonaldTrump" id="87">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="WhatleyforNC" target="ClayAndBuck" id="88">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="WhatleyforNC" target="EDSecMcMahon" id="89">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="WhatleyforNC" target="Republicans" id="90">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="WhatleyforNC" target="WhiteHouse" id="91">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="WhatleyforNC" target="realDonaldTrump" id="92">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="afbranco" target="afbranco" id="93">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="biancadelagarzaofficial" target="NewsMax" id="94">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="biancadelagarzaofficial" target="jmclghln" id="95">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="biancadelagarzaofficial" target="mikebr0371" id="96">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="biancadelagarzaofficial" target="realDonaldTrump" id="97">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="jmclghln" target="DanielCameronKY" id="98">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="jmclghln" target="NewsMax" id="99">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="jmclghln" target="jmclghln" id="100">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="jmclghln" target="justthenews" id="101">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="jmclghln" target="rapidresponse47" id="102">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="jmclghln" target="realDonaldTrump" id="103">
+        <attvalues>
+          <attvalue for="6" value="20" />
+        </attvalues>
+      </edge>
+      <edge source="breitbartnews" target="JonKahnMusic" id="104">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="CSPsychOK" id="105">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="Franklin_Graham" id="106">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="KarliBonne" id="107">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="NewsMax" id="108">
+        <attvalues>
+          <attvalue for="6" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="eric37j0ker" id="109">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="hayleycaronia" id="110">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="mikebr0371" id="111">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="oneoldman48" id="112">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="edhenry" target="realDonaldTrump" id="113">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="epaleezeldin" target="rapidresponse47" id="114">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="epaleezeldin" target="realDonaldTrump" id="115">
+        <attvalues>
+          <attvalue for="6" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="greggjarrett" target="realDonaldTrump" id="116">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="jordansekulow" target="ACLJ" id="117">
+        <attvalues>
+          <attvalue for="6" value="15" />
+        </attvalues>
+      </edge>
+      <edge source="karolineleavitt" target="realDonaldTrump" id="118">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="lindamcmahon" target="realDonaldTrump" id="119">
+        <attvalues>
+          <attvalue for="6" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="marymargaretolohan" target="realDonaldTrump" id="120">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="mirandadevine" target="realDonaldTrump" id="121">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="mxmnews" target="mattsharpsteen" id="122">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="seanhannity" target="realDonaldTrump" id="123">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="replisamcclain" target="HouseGOP" id="124">
+        <attvalues>
+          <attvalue for="6" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="rogerlsimon" target="EdwardWillett" id="125">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="rogerlsimon" target="Granrene" id="126">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="rogerlsimon" target="rogerlsimon" id="127">
+        <attvalues>
+          <attvalue for="6" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="seanspicer" target="RSBN" id="128">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="seanspicer" target="jsolomonreports" id="129">
+        <attvalues>
+          <attvalue for="6" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="seanspicer" target="realDonaldTrump" id="130">
+        <attvalues>
+          <attvalue for="6" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="sharylattkisson" target="techwench" id="131">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="shaunkraisman" target="NewsMax" id="132">
+        <attvalues>
+          <attvalue for="6" value="34" />
+        </attvalues>
+      </edge>
+      <edge source="stinchfield1776" target="Realamericasmusic" id="133">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="stinchfield1776" target="realamericasvoice" id="134">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="stinchfield1776" target="wendyrogersaz" id="135">
+        <attvalues>
+          <attvalue for="6" value="1" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
